@@ -37,6 +37,13 @@ public class PostModel implements Serializable {
         this.date = LocalDate.now();
     }
 
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
 
     public String getAutor() {
         return autor;
