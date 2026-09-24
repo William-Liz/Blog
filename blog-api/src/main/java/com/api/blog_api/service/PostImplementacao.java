@@ -49,7 +49,7 @@ public class PostImplementacao implements PostService {
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public PostResponseDto createPost(PostRequestDto dto) {
         PostModel post = postMapper.toEntity(dto);
         PostModel saved = postRepository.save(post);

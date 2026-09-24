@@ -17,11 +17,8 @@ public class utils {
     @Component
     public class DataUtil {
 
-        private final PostRepository postRepository;
-
-        public DataUtil(PostRepository postRepository) {
-            this.postRepository = postRepository;
-        }
+        @Autowired
+        PostRepository postRepository;
 
         @PostConstruct
         public void savePosts(){
